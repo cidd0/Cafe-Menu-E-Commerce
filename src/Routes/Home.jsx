@@ -1,4 +1,5 @@
 import HomeImg from "../assets/Home-Cafe.jfif";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
@@ -24,12 +25,18 @@ const Home = () => {
                         Relax, unwind, and enjoy the simple joys of life—one sip at a time.
                     </p>
                     <div className="flex gap-4 mt-8">
-                        <button className="border border-black px-6 py-2 font-medium hover:bg-black hover:text-white transition">
+                        <Link 
+                            to="/about"
+                            className="border border-black px-6 py-2 font-medium hover:bg-black hover:text-white transition"
+                        >
                             About Us
-                        </button>
-                        <button className="bg-black text-white px-6 py-2 font-medium hover:bg-gray-800 transition">
+                        </Link>
+                        <Link
+                            to="/menu"
+                            className="bg-black text-white px-6 py-2 font-medium hover:bg-gray-800 transition"
+                        >
                             Menu
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>
