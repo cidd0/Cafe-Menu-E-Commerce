@@ -7,24 +7,22 @@ import Menu from "./Routes/Menu.jsx";
 import Location from "./Routes/Location.jsx";
 
 function App() {
-
-
-  return (
-    <Router>
-      <div className="flex flex-col h-screen bg-[#FFF8F1] overflow-hidden">
-        <TopNav />
-        <main className="flex-1">
-          <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/location" element={<Location />} />
-        </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
-  )
+    return (
+        <Router>
+            <div className="min-h-screen bg-[#FFF8F1] flex flex-col">
+                <TopNav />
+                <main className="flex-1 pt-20">
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/menu" element={<Menu />} />
+                        <Route path="/location" element={<Location />} />
+                    </Routes>
+                </main>
+                <Footer />
+            </div>
+        </Router>
+    );
 }
 
-export default App
+export default App;

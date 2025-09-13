@@ -41,7 +41,7 @@ const About = () => {
     };
 
     return(
-        <div className="h-full relative overflow-hidden">
+        <div className="h-full relative overflow-hidden pt-30">
             <div className="flex h-full transition-transform duration-700 ease-in-out"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                     
@@ -56,14 +56,14 @@ const About = () => {
             </div>
                 <button 
                 onClick={() => goToSlide(currentIndex === 0 ? props.length - 1 : currentIndex - 1)}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transoition-all"
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition-all z-10 flex items-center justify-center w-12 h-12"
                 >
                     ←
                 </button>
 
                 <button 
                 onClick={() => goToSlide(currentIndex === props.length - 1 ? 0 : currentIndex + 1)}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all"
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition-all z-10 flex items-center justify-center w-12 h-12"
                 >
                     →
                 </button>

@@ -3,9 +3,9 @@ import { FaInstagram, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
     return(
-        <div className="flex items-center justify-between border-t border-black px-20 py-6 ">
+        <div className="flex items-center justify-between border-t border-black px-20 py-6 bg-[#FFF8F1] relative z-10">
             <div >
-                <h1 className="font-medium">Cafe</h1>
+                <h1 className="font-bold">Cafe</h1>
                 <p>1111 A.Something Ave.,<br/>
                 <span>Cubao, Quezon City</span></p>
             </div>
